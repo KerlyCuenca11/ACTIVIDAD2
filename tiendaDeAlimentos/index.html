@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Alimentos Saludables</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .superior {
+            flex: 1;
+            border: none;
+            width: 100%;
+            height: 50%;
+        }
+
+        .inferior {
+            display: flex;
+            flex: 1;
+            height: 50%;
+        }
+
+        .izquierdo,
+        .cuerpo {
+            border: none;
+            height: 100%;
+        }
+
+        .izquierdo {
+            width: 40%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            overflow-y: auto; /* Añadimos desplazamiento vertical */
+        }
+
+        .izquierdo h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .cuerpo {
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            overflow-y: auto; /* Añadimos desplazamiento vertical */
+        }
+
+        .cuerpo h1 {
+            color: #d480db;
+            margin-top: 0;
+        }
+
+        /* Estilos adicionales para iframes */
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <iframe src="encabezadoTienda.html" class="superior"></iframe>
+        <div class="inferior">
+            <iframe src="infoTienda.html" class="izquierdo"></iframe>
+            <iframe src="inicioTienda.html" class="cuerpo" name="contenido"></iframe>
+        </div>
+    </div>
+</body>
+</html>

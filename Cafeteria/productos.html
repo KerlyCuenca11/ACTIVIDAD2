@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos y Servicios - Cafetería San Tomás</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d480db;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #d480db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos para el contenedor de las tarjetas de productos */
+        .productos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        /* Estilos para las tarjetas de productos */
+        .producto {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos para las imágenes de los productos */
+        .producto img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para los títulos de los productos */
+        .producto h2 {
+            color: #343a40;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilos para la descripción de los productos */
+        .producto p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>Descubre Nuestros Deliciosos Productos</h1>
+    <p>En Cafetería Como dice el Dicho, te ofrecemos una amplia variedad de bebidas y alimentos para satisfacer todos tus antojos. Desde el café más exquisito hasta deliciosos bocadillos y postres, tenemos todo lo que necesitas para disfrutar de un momento delicioso.</p>
+    <p>Nuestro menú incluye:</p>
+    <ul>
+        <li>Café americano</li>
+        <li>Té negro</li>
+        <li>Jugos naturales</li>
+        <li>Smoothies</li>
+        <li>Desayunos y bocadillos variados</li>
+        <li>Postres caseros</li>
+    </ul>
+
+    <!-- Contenedor de tarjetas de productos -->
+    <div class="productos-container">
+        <!-- Tarjeta de producto 1 -->
+        <div class="producto">
+            <img src="https://cdn.pixabay.com/photo/2015/06/24/01/15/coffee-819362_1280.jpg" alt="Café Americano">
+            <h2>Café Americano</h2>
+            <p>Una deliciosa taza de café americano preparada con granos recién molidos.</p>
+        </div>
+
+        <!-- Tarjeta de producto 2 -->
+        <div class="producto">
+            <img src="https://cdn.pixabay.com/photo/2016/05/23/15/16/herbal-tea-1410565_1280.jpg" alt="Té Negro">
+            <h2>Té Negro</h2>
+            <p>Una selección de tés negros de alta calidad, perfectos para cualquier momento del día.</p>
+        </div>
+
+        <!-- Tarjeta de producto 3 -->
+        <div class="producto">
+            <img src="https://cdn.pixabay.com/photo/2018/02/23/19/23/smoothies-3176371_1280.jpg" alt="Jugos Naturales">
+            <h2>Jugos Naturales</h2>
+            <p>Jugos frescos y naturales hechos con frutas de temporada para un sabor delicioso y refrescante.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>2024 Cafetería San Tomás. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

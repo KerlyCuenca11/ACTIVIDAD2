@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours Disponibles</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Color de fondo */
+            color: #333; /* Color del texto principal */
+        }
+
+        header {
+            background-color: #d480db; /* Color de fondo del encabezado */
+            color: #fff; /* Color del texto del encabezado */
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .tour {
+            width: calc(30% - 20px); /* Ancho de cada tour con espacio entre ellos */
+            margin-bottom: 40px; /* Espacio entre tours */
+            border-radius: 10px; /* Bordes redondeados */
+            background-color: #fff; /* Color de fondo de los tours */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .tour h2 {
+            color: #d480db; /* Color del título */
+            font-size: 22px; /* Tamaño del título */
+            margin: 20px 0 10px; /* Espacio alrededor del título */
+            text-align: center; /* Alineación del título */
+        }
+
+        .tour p {
+            line-height: 1.6; /* Altura de línea */
+            margin: 0 20px 10px; /* Espacio alrededor de los párrafos */
+            text-align: justify; /* Alineación del texto */
+        }
+
+        .tour img {
+            display: block;
+            margin: 0 auto 20px; /* Centrar la imagen y añadir espacio inferior */
+            max-width: 100%; /* Ajustar imagen al ancho del contenedor */
+            border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tours Disponibles</h1>
+    </header>
+    <main>
+        <div class="tour">
+            <img src="https://cdn.pixabay.com/photo/2017/05/27/22/33/morocco-2349647_1280.jpg" alt="Tour por la Ciudad Vieja">
+            <h2>Descubre la Ciudad Vieja</h2>
+            <p>Sumérgete en la rica historia y cultura de nuestra ciudad con nuestro emocionante tour por la Ciudad Vieja. Explora los monumentos más emblemáticos y disfruta de las pintorescas calles adoquinadas.</p>
+            <p><strong>Duración:</strong> 3 horas</p>
+            <p><strong>Precio:</strong> $50 por persona</p>
+        </div>
+        <div class="tour">
+            <img src="https://images.ecestaticos.com/-Q5QNhhKfbAIvzoyjfO8HtQ7vSs=/0x0:2121x1414/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F373%2F36b%2F9fe%2F37336b9fec6260fc47daec617570c067.jpg" alt="Aventura en la Naturaleza">
+            <h2>Aventura en la Naturaleza</h2>
+            <p>Embárcate en una emocionante aventura en la naturaleza con nuestro tour. Disfruta de actividades al aire libre como senderismo, rappel y kayak mientras exploras paisajes impresionantes y llenos de vida.</p>
+            <p><strong>Duración:</strong> 1 día</p>
+            <p><strong>Precio:</strong> $120 por persona</p>
+        </div>
+        <div class="tour">
+            <img src="https://media.istockphoto.com/id/1620784318/es/foto/vista-panor%C3%A1mica-de-crucero-revestimiento-terraza-y-vista-al-mar.jpg?s=1024x1024&w=is&k=20&c=xh3On6VLUeBn8LvWw-GVJzRrQISg_T75T54T18d4bFM=" alt="Crucero al Atardecer">
+            <h2>Crucero al Atardecer</h2>
+            <p>Relájate y disfruta de las vistas panorámicas mientras navegamos por las aguas al atardecer en nuestro exclusivo crucero. Incluye una cena gourmet y entretenimiento en vivo para una experiencia inolvidable.</p>
+            <p><strong>Duración:</strong> 2 horas</p>
+            <p><strong>Precio:</strong> $80 por persona</p>
+        </div>
+    </main>
+</body>
+</html>

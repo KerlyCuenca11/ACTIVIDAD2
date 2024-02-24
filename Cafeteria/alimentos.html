@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #d480db;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #ffffff;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #343a40;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            flex: 0 1 calc(33.33% - 40px);
+            margin-bottom: 40px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .menu li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .menu img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .menu h3 {
+            color: #343a40;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .menu p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #d480db;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenidos</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Menú</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Descubre nuestras deliciosas bebidas y alimentos:</h2>
+            <ul class="menu">
+                <li>
+                    <div class="menu-item">
+                        <h3>Entradas</h3>
+                        <img src="https://images6.alphacoders.com/415/thumb-440-415022.webp" alt="">
+                        <p>Variedad de entradas para comenzar tu experiencia gastronómica, desde tostadas de aguacate hasta mini empanadas de espinacas y queso.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <h3>Bebidas</h3>
+                        <img src="https://media.istockphoto.com/id/505168330/es/foto/taza-de-caf%C3%A9-con-granos-de-caf%C3%A9-con-leche-y-varillas-de-canela.jpg?s=1024x1024&w=is&k=20&c=P8IF01gREHc7FvSrgDJ8fB5d6lM-fbfOYXGLjLyU6yk=" alt="">
+                        <p>Refresca tu día con una selección de bebidas, desde diferentes tipos de café y té hasta especiales como chocolate caliente o té de matcha.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <h3>Postres</h3>
+                        <img src="https://cdn.pixabay.com/photo/2014/05/23/23/17/dessert-352475_1280.jpg" alt="">
+                        <p>Termina tu comida con un toque dulce con nuestros deliciosos postres, incluyendo tarta de queso, brownies y tiramisú.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Página de Inicio. Todos los derechos reservados.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Idiomas - Nueva Vida</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .superior {
+            flex: 1;
+            border: none;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(135deg, #d480db, #ffffff); /* Gradiente verde */
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+
+        .inferior {
+            display: flex;
+            flex: 1;
+            height: 50%;
+        }
+
+        .izquierdo,
+        .cuerpo {
+            border: none;
+            height: 100%;
+        }
+
+        .izquierdo {
+            width: 40%;
+            background-color: #d480db; /* Verde oscuro */
+            color: #fff;
+            padding: 20px;
+        }
+
+        .cuerpo {
+            width: 60%;
+            background-color: #fff;
+            padding: 20px;
+            overflow-y: auto; /* Añadir desplazamiento vertical si es necesario */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="superior">
+            <h1>¡Bienvenido a Academia de Idiomas Nueva Vida!</h1>
+        </div>
+        <div class="inferior">
+            <iframe src="encabezadoAcademia.html" class="izquierdo" frameborder="0"></iframe>
+            <iframe src="cursos.html" class="cuerpo" name="contenido" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>

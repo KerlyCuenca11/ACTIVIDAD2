@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .superior {
+            flex: 1;
+            border: none;
+            width: 100%;
+            height: 50%;
+        }
+
+        .inferior {
+            display: flex;
+            flex: 1;
+            height: 50%;
+        }
+
+        .izquierdo,
+        .cuerpo {
+            border: none;
+            flex: 1;
+            height: 100%;
+        }
+
+        .izquierdo {
+            width: 30%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow-y: auto; /* Agregar desplazamiento si el contenido excede el tamaño */
+        }
+
+        .izquierdo h2 {
+            color: #d480db;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .cuerpo {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow-y: auto; /* Agregar desplazamiento si el contenido excede el tamaño */
+        }
+
+        .cuerpo h1 {
+            color: #333333;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <iframe src="navegador.html" frameborder="0" class="superior"></iframe>
+        <div class="inferior">
+            <iframe src="sobreNosotros.html" frameborder="0" class="izquierdo"></iframe>
+            <iframe src="alimentos.html" frameborder="0" class="cuerpo" name="contenido"></iframe>
+        </div>
+    </div>
+</body>
+</html>
